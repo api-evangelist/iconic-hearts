@@ -1,0 +1,16 @@
+generated: '2026-10-25'
+method: none
+source:
+- https://zapier.com/apps/iconic-hearts/integrations
+- https://n8n.io/integrations/iconic-hearts/
+- https://composio.dev/toolkits/iconic-hearts
+- https://monid.ai/tools/iconic-hearts
+checked:
+- https://composio.dev/toolkits/iconic-hearts
+- https://monid.ai/tools/iconic-hearts
+- https://n8n.io/integrations/iconic-hearts/
+- https://zapier.com/apps/iconic-hearts/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

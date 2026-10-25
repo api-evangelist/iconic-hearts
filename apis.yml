@@ -1,25 +1,72 @@
 aid: iconic-hearts
+
 name: Iconic Hearts
-description: 'Iconic Hearts is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by coatue) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Iconic Hearts Inc builds a social platform for Generation Alpha, offering a suite of apps—Sendit, Noteit, Starmatch, Linkit—that enable young users to ask questions, share notes, match interests, and connect through heart‑shaped link chains. Launched in 2018, the service claims over 250 million users worldwide and aims to become the primary destination for all social interactions among Gen Alpha, fostering lifelong friendships through safe, playful digital experiences.'
+
 url: https://raw.githubusercontent.com/api-evangelist/iconic-hearts/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-25'
+
 modified: '2026-10-25'
+
 tags:
 - Company
-apis: []
+- Social
+- Platform
+- GenAlpha
+- Mobile
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- coatue
+
 common:
+- type: Hosts
+  url: hosts/iconic-hearts-hosts.yml
+- type: Vendors
+  url: vendors/iconic-hearts-vendors.yml
+- type: TermsOfService
+  url: https://www.iconichearts.com/terms
+- type: PrivacyPolicy
+  url: https://www.iconichearts.com/privacy
+- type: Leadership
+  url: https://www.iconichearts.com/sendit/team
+- type: DomainSecurity
+  url: security/iconic-hearts-domain-security.yml
 - type: Website
   url: https://www.iconichearts.com/
+
+apis: []
+
+x-backed-by:
+- coatue
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.iconichearts.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-25'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
